@@ -1,6 +1,7 @@
 We get this image.
 
-![[Pasted image 20231112105657.png]]
+![hideme_1](https://github.com/Korkii/writeups/assets/44523624/3dd821bf-24b1-43fe-b67d-46d1023207a8)
+105657.png]]
 
 We check using exiftool, 
 ![[Pasted image 20231112105710.png]]
