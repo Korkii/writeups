@@ -4,7 +4,8 @@ We get this image.
 
 
 We check using exiftool, 
-![[Pasted image 202![hideme_2](https://github.com/Korkii/writeups/assets/44523624/379e3127-0450-4dfb-9da6-58bdefe7d598)
+
+![hideme_2](https://github.com/Korkii/writeups/assets/44523624/379e3127-0450-4dfb-9da6-58bdefe7d598)
 
 
 There seems to be nothing here, maybe it's extension is not correct? 
