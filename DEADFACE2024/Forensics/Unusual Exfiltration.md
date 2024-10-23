@@ -6,7 +6,7 @@ _Number of Points:_ 250
 _Challenge Name:_ Unusual Exfiltration
 _Challenge Description:_ `Network logs from a machine DEADFACE compromised are being analyzed. It seems something was exfiltrated to their proxy machine on the local network before being sent back to their C2 server. Can you help figure out what data was stolen?
 
-![[Pasted image 20241023074221.png]]
+![](Pasted%20image%2020241023074221.png)
 
 ## Solution
 
@@ -18,21 +18,22 @@ Whenever I solve this ~~bad~~ great category, I always have a few stuff that I l
 After checking the first one, we check the protocol hierarchy :D
 You can access it through `Statistics -> Protocol Hierarchy`
 
-![[Pasted image 20241023074922.png]]
+![](Pasted%20image%2020241023074922.png)
 
 From this image we can understand we have a lot of data, so lets filter for it.
 
-![[Pasted image 20241023075032.png]]
+![](Pasted%20image%2020241023091721.png)
 
 A quick note - _A stream refers to the flow of data back and forth over the course of a protocol conversation between two endpoints_.
 
 Furthermore, if we follow one of the streams we will see that it sends a message containing the letters 'Q' and 'R', and the destinations responds with an `'ack'` signal, for approval.
 
-![[Pasted image 20241023075307.png]]
+![](Pasted%20image%2020241023075307.png)
+
 So from here the solution is obvious right? Nope! For some random reason it took a few hours of watching Frieren for the lightbulb to light up in my brain. 
 The letters 'Q' and 'R' refer to a QR code, however, when you print the data section of the packets you don't necessarily see that.
 
-![[Pasted image 20241023075610.png]]
+![](Pasted%20image%2020241023091753.png)
 
 In order to print that, I wrote this little script:
 
@@ -79,12 +80,12 @@ qr_image.save('qr_code.png')
 
 And I received this image:
 
-![[Pasted image 20241023080225.png]]
+![](Pasted%20image%2020241023080225.png)
 
 When putting it into a QR reader online, you receive the flag :)
 
-![[Pasted image 20241023080358.png]]
+![](Pasted%20image%2020241023080358.png)
 
 Flag: `flag{QR-c0de-4-exfiltr@ation}`
 
-![[white-dream-personal-use-only-regular-1.png]]
+![](white-dream-personal-use-only-regular-1.png)

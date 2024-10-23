@@ -30,4 +30,4 @@ We open the flag image and we get this!
 ![hideme_6](https://github.com/Korkii/writeups/assets/44523624/18edfc50-3f34-4892-9ff5-1648449ee8a1)
 
 
-flag: picoCTF{Hiddinng_An_imag3_within_@n_ima9e_dc2ab58f}
+flag: `picoCTF{Hiddinng_An_imag3_within_@n_ima9e_dc2ab58f}`
